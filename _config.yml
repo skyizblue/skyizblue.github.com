@@ -4,8 +4,8 @@
 
 url: http://skyizblue.github.io
 title: Frodo's Blog
-subtitle: 언제 닫힐지 모르는 블로그
-author: 프로도
+subtitle: The blog
+author: Frodo
 simple_search: http://google.com/search
 description:
 
@@ -82,7 +82,7 @@ googleplus_user:
 googleplus_hidden: false
 
 # Pinboard
-pinboard_user: skyizblue
+pinboard_user: frodo
 pinboard_count: 3
 
 # Delicious
