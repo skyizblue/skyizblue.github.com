@@ -1,0 +1,23 @@
+---
+layout: post
+title: "체온계 애플리케이션"
+date: 2013-06-08 05:22
+comments: true
+categories: 
+---
+와이프가 매일 아침마다 일어나서 체온을 재고 항상 수첩에 기록을 하길래 도움이 될 수 없을까 해서 만든 앱.  
+
+처음에 급하게 만드느라 AlertView 띄워서 입력하고 TableView로 보여주는 형태로 만들었는데 생각보다 열심히 사용해서 좀더 좋게 만들어주고자 수정하는 중.  
+
+우선 자다가 깨서 체온을 재고 입력하는 행위를 하기 때문에 AlertView에 Typing하는 과정을 빼고 UIPickerView 붙여서 체온을 보다 쉽게 입력하도록 수정하였고  
+
+일정한 범위에서 체온이 변하기 때문에 입력값의 범위를 적당히 설정하고 가장 최근에 입력했던 체온을 처음에 선택하여 보여주도록 수정하였음.  
+
+그리고 이번에 수정하면서 CoreData를 적용해보았는데 생각보다 편리하고 쉬웠음. ORM 환경에 Database에서 수정되면 UI에 알아서 반영되고 [Magical Record](https://github.com/magicalpanda/MagicalRecord)도 아주 편함.  
+
+앞으로 계획은 현재 입력한 데이터를 TableView를 통해 보여주고 있는데 그래프 형태로 보여줄 예정.  
+
+그래프 기능까지 붙이고 안드로이드도 만들 예정인데 누구 쓸 사람이 있으려나...
+
+<img src="/images/screenshot_app_temperature_01.png" class="iphone screenshot" />
+<img src="/images/screenshot_app_temperature_00.png" class="iphone screenshot" />
