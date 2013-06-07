@@ -9,9 +9,7 @@
   <meta name="author" content="Frodo">
 
   
-  <meta name="description" content="옥토프레스 설치 완료! 옥토프레스(Octopress) 설치는 생각보다 쉬웠다.
-설치 방법은 공식 사이트에 가서 하라는대로 차분히 따라하면 된다.
-삽질했던 부분은 Custom Domain 설정하는 과정에서 CNAME 파일을 github에 올려줘야 하는 작업을 빼먹어서 &hellip;">
+  <meta name="description" content="와이프가 매일 아침마다 일어나서 체온을 재고 항상 수첩에 기록을 하길래 도움이 될 수 없을까 해서 만든 앱. 처음에 급하게 만드느라 AlertView 띄워서 입력하고 TableView로 보여주는 형태로 만들었는데 생각보다 열심히 사용해서 좀더 좋게 만들어주고자 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -23,6 +21,7 @@
   <link rel="canonical" href="http://skyizblue.github.io">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/stylesheets/main.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Frodo's Blog" type="application/atom+xml">
   <script src="/javascripts/modernizr-2.0.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -73,6 +72,57 @@
       
   <header>
     
+      <h1 class="entry-title"><a href="/blog/2013/06/08/post/">체온계 애플리케이션</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-06-08T05:22:00+09:00" pubdate data-updated="true">Jun 8<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>와이프가 매일 아침마다 일어나서 체온을 재고 항상 수첩에 기록을 하길래 도움이 될 수 없을까 해서 만든 앱.</p>
+
+<p>처음에 급하게 만드느라 AlertView 띄워서 입력하고 TableView로 보여주는 형태로 만들었는데 생각보다 열심히 사용해서 좀더 좋게 만들어주고자 수정하는 중.</p>
+
+<p>우선 자다가 깨서 체온을 재고 입력하는 행위를 하기 때문에 AlertView에 Typing하는 과정을 빼고 UIPickerView 붙여서 체온을 보다 쉽게 입력하도록 수정하였고</p>
+
+<p>일정한 범위에서 체온이 변하기 때문에 입력값의 범위를 적당히 설정하고 가장 최근에 입력했던 체온을 처음에 선택하여 보여주도록 수정하였음.</p>
+
+<p>그리고 CoreData를 적용해보았는데 생각보다 편리하고 쉬웠음. ORM 환경에 Database에서 수정되면 UI에 알아서 반영되고 <a href="https://github.com/magicalpanda/MagicalRecord">Magical Record</a>도 아주 편함.</p>
+
+<p>앞으로 계획은 현재 입력한 데이터를 TableView를 통해 보여주고 있는데 그래프 형태로 보여줄 예정.</p>
+
+<p>그래프 기능까지 붙이고 안드로이드도 만들 예정인데 누구 쓸 사람이 있으려나&hellip;</p>
+
+<p><img src="/images/screenshot_app_temperature_01.png" class="iphone screenshot" />
+<img src="/images/screenshot_app_temperature_00.png" class="iphone screenshot" /></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
       <h1 class="entry-title"><a href="/blog/2013/05/15/post/">옥토프레스 설치 완료</a></h1>
     
     
@@ -106,7 +156,7 @@
 스프링노트 때 잠깐 써보고 이번이 두번째인데 줄바꿈은 자꾸 잊어먹고 실수하게 된다. 그냥 줄바꿈을 하면 하나의 문장으로 인식하여 붙어서 한문단으로 출력이 되기 때문에 강제 개행을 하려면 줄 끝에 공백 두칸을 넣어야 하는데 자꾸 잊어버려서 미리보기 때 알아서 넣어주고 있다.<br/>
 아무튼 조금만 더 써보면 익숙해질 것 같다.</p>
 
-<p>간만에 길게(?) 글을 쓰니까 기분이 좋다. 당분간 SN에 공개 안하고 쓸 예정.
+<p>간만에 길게(?) 글을 쓰니까 기분이 좋다. 당분간 SN에 공개 안하고 쓸 예정.<br/>
 주로 이 시간, 11시에서 12시 사이에 글을 올릴 것 같다. 난 유부남이기 때문에&hellip;<br/>
 오늘 <a href="http://lqez.github.io/blog/making-a-fan-page-for-a-developer-conference.html">이런 글</a>을 봤는데 참 흥미로웠다.<br/>
 특히 &ldquo;딸을 재우고 와이프가 TV를 보는 동안 작업을 시작했다.&#8221;라는 문장이 와닿았다&hellip;</p>
@@ -174,6 +224,10 @@ deploy 하는 과정에서 삽질이 있었지만 무난하게 30분만에 완�
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/06/08/post/">체온계 애플리케이션</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2013/05/15/post/">옥토프레스 설치 완료</a>
